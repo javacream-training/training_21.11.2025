@@ -1,14 +1,14 @@
-from books_service import BooksService
+from people import PeopleService
 
 def main():
-    books_service = BooksService()
-    user_input = input('Enter the ISBN to search for or a for all books: ')
+    people_service = PeopleService()
+    user_input = input('Enter an a for all people: ')
     if user_input == 'a':
-        books = books_service.find_all()
-        print(books)
+        people = people_service.find_all()
+        print(people)
     else:
-        isbn = user_input
-        book = books_service.search_by(isbn) 
-        print(book.title)
+ #       people = user_input
+ #       people = people_service.search_by() 
+        print('none')
 
 main()
