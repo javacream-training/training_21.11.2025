@@ -7,7 +7,7 @@ def main():
         user = 'user',
         password='user'
     )
-    sql_statement = f"SELECT * FROM PEOPLE"
+    sql_statement = f"SELECT * FROM PEOPLES"
 
     cursor = connection.cursor()
     cursor.execute(sql_statement)
