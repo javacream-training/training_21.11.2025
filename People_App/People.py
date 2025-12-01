@@ -15,7 +15,6 @@ class Person:
         return f'(ID = {self.id}, Firstname = {self.firstname}, Lastname = {self.lastname}, Height = {self.height}m, Weight = {self.weight}kg, Gender = {self.gender})'
 
 class PeopleService:
-
     def __init__(self):
         self.connection = mysql.connector.connect(
             host = 'javacream.eu',
@@ -97,6 +96,4 @@ class PeopleService:
         #     books.append(book)   
         # return books
         return [Person(data) for data in responce]
-
-
 

@@ -3,6 +3,7 @@ from People import PeopleService
 def main():
     people_service = PeopleService()
     search_criteria = input('Enter searching method (Full_List=*(Default), Firstname=F, Lastname=L, ID=id, Height_Range=HR, Weight_Range=WR, Gender=G): ')
+    
     if search_criteria == 'id':
         id = input('Enter the ID: ')
         print(f'PERSON {people_service.find_by_id(id)}')    
